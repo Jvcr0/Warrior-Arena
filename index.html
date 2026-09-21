@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Uncial+Antiqua&display=swap" rel="stylesheet">
     </head>
     <body class="pgn-login">
-        <form class="login">
+        <form class="login" id="formLogin">
             <div class="logo">
                 <a href="main.html">
                     <img src="wa.png" alt="Warrior Arena">
@@ -16,13 +16,13 @@
             </div>
             
             <ul>
-                <label for="Usuario">Usuário</label>
+                <label for="Email">Email</label>
                 <br>
-                <input type="email" placeholder="Digite o seu email">
+                <input type="email" id="email" placeholder="Digite o seu email">
                 <br><br>
                 <label for="Senha">Senha</label>
                 <br>
-                <input type="password" placeholder="Digite a sua senha">
+                <input type="password" id="senha" placeholder="Digite a sua senha">
             </ul>
             <div class="botoes">
                 <button type="submit">Entrar</button>
@@ -32,5 +32,15 @@
                 Não possuí uma conta no nosso jogo? <a href="cadastro.html">Clique Aqui</a>
             </p>
         </form>
+
+        <div id="modal" class="modal">
+            <div class="modal-conteudo">
+                <h2 id="tituloModal">Mensagem</h2>
+                <p id="textoModal">Login realizado com sucesso!</p>
+                <button id="fecharModal" type="button">OK</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
     </body>
 </html>

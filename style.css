@@ -308,3 +308,66 @@ body.pgn-cdt {
 .logo img:hover {
     filter: drop-shadow(0 0 8px #8F1D18)
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.aberto {
+    display: flex;
+}
+
+.modal-conteudo {
+    background: #252830;
+    border: 2px solid #9A6B35;
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.modal-conteudo h2 {
+    font-family: "Uncial Antiqua", serif;
+    color: #9A6B35;
+    margin-top: 0;
+}
+
+.modal-conteudo p {
+    font-family: "Nunito Sans", sans-serif;
+    color: white;
+}
+
+.modal-conteudo button {
+    background-color: #252830;
+    border: 1px solid #9A6B35; 
+    color: #9A6B35;
+    transition: 0.3s;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Nunito Sans", sans-serif;
+    cursor: pointer;
+    appearance: none;
+}
+
+.modal-conteudo button:hover { 
+    background-color: #9A6B35; 
+    color: #374048;
+    border: 1px solid #9A6B35; 
+}
+
+body {
+    opacity: 0;
+    animation: aparecer 0.8s ease forwards;
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+    }
+}
