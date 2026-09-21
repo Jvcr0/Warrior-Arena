@@ -1,0 +1,310 @@
+body {
+    background-color: #101217;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+h1, h2 {
+    font-family: "Uncial Antiqua", serif;
+}
+a {
+    color: #8F1D18;
+}
+
+header {
+    background-color: #252830;
+    border-bottom: 2px solid #9A6B35;
+    padding: 25px 20px;
+}
+
+header h1 {
+    color: #9A6B35;
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+
+header h1 span + span {
+    margin-left: 15px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 120px 0 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    padding: 8px 1px;
+    border: 1px solid transparent;
+}
+
+header nav a:hover {
+    color: #9A6B35;
+    border: 1px solid #9A6B35;
+}
+
+.painel {
+    background-color: #252830;
+    border: 2px solid #9A6B35;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+}
+
+.painel h2 {
+    color: #9A6B35;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+header img {
+    width: 200px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+header img:hover {
+    transform: scale(1.05);
+}
+
+.menu {
+    background-image: url("banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+@media (max-width: 1200px) {
+    header nav ul {
+        gap: 80px;
+    }
+}
+
+form img {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+body.pgn-login {
+    background-image: url("login.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+    margin: 0;
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.pgn-login a{
+    color: #8F1D18;
+}
+
+.login ul {
+    margin: 0;
+    padding: 0;
+}
+
+.login {
+    background-color: #252830;
+    color: white;
+    border: 2px solid #9A6B35;
+    border-radius: 10px;
+
+    width: 500px;
+    padding: 25px;
+
+    margin: 50px auto;
+}
+
+.login h1 {
+    color: #9A6B35;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.login label {
+    color: white;
+    font-family: "Uncial Antiqua", serif;
+    font-size: 18px;
+    display: block;
+    margin-bottom: -15px;
+}
+
+.login input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 12px;
+    margin-bottom: 18px;
+
+    background-color: #101217;
+    color: white;
+
+    border: 1px solid #9A6B35;
+    border-radius: 5px;
+}
+
+.login input:focus {
+    outline: none;
+    border: 2px solid #9A6B35;
+}
+
+.botoes { 
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+} 
+
+.botoes button {
+    background-color: #252830;
+    border: 1px solid #9A6B35; 
+    color: #9A6B35;
+    transition: 0.3s;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Nunito Sans", sans-serif;
+    cursor: pointer;
+    appearance: none;
+} 
+
+.botoes button:hover { 
+    background-color: #9A6B35; 
+    color: #374048;
+    border: 1px solid #9A6B35; 
+}
+
+
+body .pgn-arena {
+    margin: 0;
+    overflow: hidden;
+}
+
+.imagem-arena {
+    width: 99.9vw;
+    height: 99.8vh;
+    object-fit: contain;
+
+    position: fixed;
+    top: 1px;
+    left: 1px;
+    
+    border: 1px solid #9A6B35;
+}
+
+.btn-voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    padding: 10px 20px;
+
+    background-color: #252830;
+    color: white;
+
+    border: 2px solid #9A6B35;
+    border-radius: 8px;
+    transition: 0.3s;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-voltar:hover {
+    background-color: #9A6B35;
+}
+
+body.pgn-cdt {
+    background-image: url("login.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
+    min-height: 100vh;
+    margin: 0;
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.pgn-cdt a{
+    color: #8F1D18;
+}
+
+.cdt ul {
+    margin: 0;
+    padding: 0;
+}
+
+.cdt {
+    background-color: #252830;
+    border: 2px solid #9A6B35;
+    border-radius: 10px;
+
+    width: 500px;
+    padding: 25px;
+
+    margin: 50px auto;
+}
+
+.cdt h1 {
+    color: #9A6B35;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.cdt label {
+    color: white;
+    font-size: 18px;
+    display: block;
+    margin-bottom: -15px;
+    font-family: "Uncial Antiqua", serif;
+}
+
+.cdt input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 12px;
+    margin-bottom: 18px;
+
+    background-color: #101217;
+    color: white;
+
+    border: 1px solid #9A6B35;
+    border-radius: 5px;
+}
+
+.cdt input:focus {
+    outline: none;
+    border: 2px solid #9A6B35;
+}
+
+.logo img {
+    transition: 0.3s;
+}
+
+.logo img:hover {
+    filter: drop-shadow(0 0 8px #8F1D18)
+}
