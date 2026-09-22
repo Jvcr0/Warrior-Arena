@@ -363,7 +363,7 @@ body.pgn-cdt {
 
 body {
     opacity: 0;
-    animation: aparecer 0.8s ease forwards;
+    animation: aparecer 1s ease forwards;
 }
 
 @keyframes aparecer {
